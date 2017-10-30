@@ -52,14 +52,60 @@ public class AirlineParser {
 		}else{
 			lateDelayAvailable = false;
 		}
+	
 		
-		
-		
-		
-		
-		
-		
-		
+	}
+
+	public int getYear() {
+		return year;
+	}
+
+	public int getMonth() {
+		return month;
+	}
+
+	public int getDayofmonth() {
+		return dayofmonth;
+	}
+
+	public int getDayofweek() {
+		return dayofweek;
+	}
+
+	public int getArrDelay() {
+		return arrDelay;
+	}
+
+	public int getDepDelay() {
+		return depDelay;
+	}
+
+	public int getLateDelay() {
+		return lateDelay;
+	}
+
+	public boolean isArrDelayAvailable() {
+		return arrDelayAvailable;
+	}
+
+	public boolean isDepDelayAvailable() {
+		return depDelayAvailable;
+	}
+
+	public boolean isLateDelayAvailable() {
+		return lateDelayAvailable;
+	}
+
+	public String getUniqueCarrier() {
+		return uniqueCarrier;
+	}
+
+	public String getOrigin() {
+		return origin;
+	}
+
+	public String getDest() {
+		return dest;
 	}
 
 }
