@@ -66,7 +66,7 @@ public class TaggedKey implements WritableComparable<TaggedKey>{
 	
 	@Override
 	public String toString() {
-		return ((new StringBuilder()).append(carrierCode).append(",").append(tag)).append(",").toString();
+		return carrierCode + "," + tag + ",";
 	}
 
 	

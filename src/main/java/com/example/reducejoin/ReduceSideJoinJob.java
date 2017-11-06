@@ -35,7 +35,7 @@ public class ReduceSideJoinJob extends Configured implements Tool{
 		
 //		MultipleInputs.addInputPath(job, new Path("/home/java/input/1987_nohead.csv"), TextInputFormat.class,
 //				MapperReduceSideJoin.class);
-		MultipleInputs.addInputPath(job, new Path("/home/java/delaycount/codemonth"), TextInputFormat.class,
+		MultipleInputs.addInputPath(job, new Path("/home/java/delaycount/codemonthTotal"), TextInputFormat.class,
 				MapperReduceSideJoin.class);
 		MultipleInputs.addInputPath(job, new Path("/home/java/meta/carriers.csv"),
 				TextInputFormat.class, CarrierCodeMapper.class);

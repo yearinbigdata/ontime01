@@ -21,8 +21,8 @@ public class ReducerReduceSideJoin extends Reducer<TaggedKey, Text, Text, Text>{
 		
 		while(iterator.hasNext()){
 			Text record = iterator.next();
-			outputKey.set(key.getCarrierCode());
-			outValue = new Text(carrierName.toString() + "\t" + record.toString());
+//			outputKey.set(key.getCarrierCode());
+			outputKey = new Text(carrierName.toString() + "," + record.toString());
 			context.write(outputKey, outValue);
 		}
 	}

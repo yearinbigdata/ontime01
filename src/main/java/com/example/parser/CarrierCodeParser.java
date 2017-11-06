@@ -31,4 +31,12 @@ public class CarrierCodeParser {
 		return carrierName;
 	}
 
+//	public void setCarrierCode(String carrierCode) {
+//		this.carrierCode = carrierCode;
+//	}
+//
+//	public void setCarrierName(String carrierName) {
+//		this.carrierName = carrierName;
+//	}
+
 }

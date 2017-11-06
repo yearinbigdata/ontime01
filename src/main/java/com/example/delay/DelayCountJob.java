@@ -34,8 +34,12 @@ public class DelayCountJob extends Configured implements Tool {
 	public int run(String[] args) throws Exception {
 
 		Job job = new Job(getConf(), "DelayCountJob");
-		Path inputDir = new Path("/home/java/input/1987_nohead.csv");
-		Path outputDir = new Path("/home/java/dataexpo_out/1987");
+		
+//		FileInputFormat.setInputPaths(job, "/home/java/input/1987_nohead.csv");
+//		FileInputFormat.addInputPaths(job, "/home/java/input/1988_nohead.csv");
+		
+		Path inputDir = new Path("/home/java/input");
+		Path outputDir = new Path("/home/java/dataexpo_out/total");
 
 		FileInputFormat.setInputPaths(job, inputDir);
 		FileOutputFormat.setOutputPath(job, outputDir);
